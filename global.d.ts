@@ -25,6 +25,8 @@ declare module "vue" {
     ElInput: typeof import("./types/input/index.vue")['default']
     ElTabs: typeof import("./types/tabs/index.vue")['default']
     ElTabPane: typeof import("./types/tab-pane/index.vue")['default']
+    ElForm: typeof import("./types/form/index.vue")['default']
+    ElFormItem: typeof import("./types/form-item/index.vue")['default']
   }
 }
 

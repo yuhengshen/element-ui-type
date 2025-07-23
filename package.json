@@ -1,18 +1,29 @@
 {
   "name": "element-ui-type",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "element-ui type for vue language tools@3",
   "main": "index.ts",
   "type": "module",
   "types": "./global.d.ts",
   "files": [
     "global.d.ts",
-    "types/**/*"
+    "types/**/*",
+    "README.md"
   ],
   "scripts": {
     "build": "vue-tsc --project tsconfig.build.json"
   },
-  "keywords": [],
+  "homepage": "https://github.com/yuhengshen/element-ui-type",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuhengshen/element-ui-type.git"
+  },
+  "keywords": [
+    "element-ui",
+    "vue",
+    "typescript",
+    "global types"
+  ],
   "author": "yuhengshen@qq.com",
   "license": "MIT",
   "packageManager": "pnpm@10.12.3",
