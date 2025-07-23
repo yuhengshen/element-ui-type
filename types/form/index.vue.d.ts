@@ -7,7 +7,7 @@ type __VLS_Props = {
     /**
      * 表单验证规则
      */
-    rules?: Rule[];
+    rules?: Record<string, Rule[]>;
     /**
      * 行内表单模式
      */
