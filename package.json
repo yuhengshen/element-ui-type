@@ -1,0 +1,33 @@
+{
+  "name": "element-ui-type",
+  "version": "1.0.0",
+  "description": "element-ui type for vue language tools@3",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "types": "./global.d.ts",
+  "files": [
+    "global.d.ts",
+    "types/**/*"
+  ],
+  "scripts": {
+    "build": "vue-tsc --project tsconfig.build.json"
+  },
+  "keywords": [],
+  "author": "yuhengshen@qq.com",
+  "license": "MIT",
+  "packageManager": "pnpm@10.12.3",
+  "dependencies": {},
+  "devDependencies": {
+    "element-ui": "^2.15.14",
+    "vue": "^2.7.16",
+    "vue-tsc": "^3.0.3"
+  },
+  "peerDependencies": {
+    "element-ui": "*",
+    "vue": "^2.7.0",
+    "vue-tsc": "^3.0.3"
+  }
+}

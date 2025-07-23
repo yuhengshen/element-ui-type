@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "include": ["./packages/*/index.vue"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "outDir": "./types",
+    "skipLibCheck": true,
+    "lib": ["ESNext", "DOM",]
+  }
+}

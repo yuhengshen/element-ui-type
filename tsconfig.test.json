@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "include": ["test.vue", "index.ts"],
+  "compilerOptions": {
+    "typeRoots": ["."],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "verbatimModuleSyntax": true,
+    "target": "ESNext",
+    "types": ["global.d.ts"]
+  }
+}
