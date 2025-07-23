@@ -17,7 +17,7 @@ const props = defineProps({
   /**
    * 绑定值
    */
-  modelValue: [String, Number],
+  value: [String, Number],
   /**
    * 最大输入长度
    */

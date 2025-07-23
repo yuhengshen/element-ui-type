@@ -2,27 +2,24 @@
   <slot></slot>
 </template>
 <script setup lang="ts">
-defineProps({
-  type: {
-    type: String,
-    default: "default",
-  },
-  size: String,
-  icon: {
-    type: String,
-    default: "",
-  },
-  nativeType: {
-    type: String,
-    default: "button",
-  },
-  loading: Boolean,
-  disabled: Boolean,
-  plain: Boolean,
-  autofocus: Boolean,
-  round: Boolean,
-  circle: Boolean,
-});
+defineProps<{
+  type?: "primary" | "success" | "warning" | "danger" | "info" | "text";
+  size?: "medium" | "small" | "mini";
+  icon?: string;
+  nativeType?: "button" | "submit" | "reset";
+  loading?: boolean;
+  disabled?: boolean;
+  /**
+   * 是否朴素按钮
+   */
+  plain?: boolean;
+  autofocus?: boolean;
+  round?: boolean;
+  /**
+   * 是否圆形按钮
+   */
+  circle?: boolean;
+}>();
 
 defineEmits<{
   (e: "click", event: MouseEvent): void;

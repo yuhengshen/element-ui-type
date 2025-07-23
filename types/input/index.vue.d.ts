@@ -19,7 +19,7 @@ declare const __VLS_component: import("vue").DefineComponent<{
     /**
      * 绑定值
      */
-    modelValue: (StringConstructor | NumberConstructor)[];
+    value: (StringConstructor | NumberConstructor)[];
     /**
      * 最大输入长度
      */
@@ -134,7 +134,7 @@ declare const __VLS_component: import("vue").DefineComponent<{
     /**
      * 绑定值
      */
-    modelValue: (StringConstructor | NumberConstructor)[];
+    value: (StringConstructor | NumberConstructor)[];
     /**
      * 最大输入长度
      */

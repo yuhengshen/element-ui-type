@@ -1,62 +1,38 @@
+type __VLS_Props = {
+    type?: "primary" | "success" | "warning" | "danger" | "info" | "text";
+    size?: "medium" | "small" | "mini";
+    icon?: string;
+    nativeType?: "button" | "submit" | "reset";
+    loading?: boolean;
+    disabled?: boolean;
+    /**
+     * 是否朴素按钮
+     */
+    plain?: boolean;
+    autofocus?: boolean;
+    round?: boolean;
+    /**
+     * 是否圆形按钮
+     */
+    circle?: boolean;
+};
 declare var __VLS_1: {};
 type __VLS_Slots = {} & {
     default?: (props: typeof __VLS_1) => any;
 };
-declare const __VLS_component: import("vue").DefineComponent<{
-    type: {
-        type: StringConstructor;
-        default: string;
-    };
-    size: StringConstructor;
-    icon: {
-        type: StringConstructor;
-        default: string;
-    };
-    nativeType: {
-        type: StringConstructor;
-        default: string;
-    };
-    loading: BooleanConstructor;
-    disabled: BooleanConstructor;
-    plain: BooleanConstructor;
-    autofocus: BooleanConstructor;
-    round: BooleanConstructor;
-    circle: BooleanConstructor;
-}, void, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+declare const __VLS_component: import("vue").DefineComponent<__VLS_TypePropsToOption<__VLS_Props>, void, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     click: (event: MouseEvent) => void;
-}, string, Readonly<import("vue").ExtractPropTypes<{
-    type: {
-        type: StringConstructor;
-        default: string;
-    };
-    size: StringConstructor;
-    icon: {
-        type: StringConstructor;
-        default: string;
-    };
-    nativeType: {
-        type: StringConstructor;
-        default: string;
-    };
-    loading: BooleanConstructor;
-    disabled: BooleanConstructor;
-    plain: BooleanConstructor;
-    autofocus: BooleanConstructor;
-    round: BooleanConstructor;
-    circle: BooleanConstructor;
-}>>, {
-    type: string;
-    disabled: boolean;
-    autofocus: boolean;
-    circle: boolean;
-    icon: string;
-    nativeType: string;
-    loading: boolean;
-    plain: boolean;
-    round: boolean;
-}>;
+}, string, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToOption<__VLS_Props>>>, {}>;
 declare const _default: __VLS_WithSlots<typeof __VLS_component, __VLS_Slots>;
 export default _default;
+type __VLS_TypePropsToOption<T> = {
+    [K in keyof T]-?: {} extends Pick<T, K> ? {
+        type: import('vue').PropType<Required<T>[K]>;
+    } : {
+        type: import('vue').PropType<T[K]>;
+        required: true;
+    };
+};
 type __VLS_WithSlots<T, S> = T & {
     new (): {
         $scopedSlots: S;
