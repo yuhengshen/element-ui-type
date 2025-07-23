@@ -21,9 +21,9 @@
 | checkbox | ✅ 已完成 |
 | checkbox-button | ✅ 已完成 |
 | checkbox-group | ✅ 已完成 |
-| col | ❌ TODO |
-| collapse | ❌ TODO |
-| collapse-item | ❌ TODO |
+| col | ✅ 已完成 |
+| collapse | ✅ 已完成 |
+| collapse-item | ✅ 已完成 |
 | color-picker | ❌ TODO |
 | container | ❌ TODO |
 | date-picker | ✅ 已完成 |
@@ -66,7 +66,7 @@
 | radio-group | ❌ TODO |
 | rate | ❌ TODO |
 | result | ❌ TODO |
-| row | ❌ TODO |
+| row | ✅ 已完成 |
 | scrollbar | ❌ TODO |
 | select | ❌ TODO |
 | skeleton | ❌ TODO |
