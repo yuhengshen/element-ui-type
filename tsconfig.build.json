@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "include": ["./packages/*/index.vue"],
+  "include": ["./packages/*/index.vue", "./index.ts"],
   "compilerOptions": {
     "baseUrl": ".",
     "emitDeclarationOnly": true,

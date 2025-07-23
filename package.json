@@ -2,11 +2,8 @@
   "name": "element-ui-type",
   "version": "1.0.1",
   "description": "element-ui type for vue language tools@3",
-  "main": "index.js",
+  "main": "index.ts",
   "type": "module",
-  "exports": {
-    ".": "./index.js"
-  },
   "types": "./global.d.ts",
   "files": [
     "global.d.ts",
