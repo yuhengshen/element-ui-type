@@ -15,6 +15,7 @@ declare module "vue" {
     ElCarousel: typeof import("./types/carousel/index.vue")["default"];
     ElCarouselItem: typeof import("./types/carousel-item/index.vue")["default"];
     ElCascader: typeof import("./types/cascader/index.vue")["default"];
+    ElCascaderPanel: typeof import("./types/cascader-panel/index.vue")["default"];
     ElCheckbox: typeof import("./types/checkbox/index.vue")["default"];
     ElCheckboxButton: typeof import("./types/checkbox-button/index.vue")["default"];
     ElCheckboxGroup: typeof import("./types/checkbox-group/index.vue")["default"];
