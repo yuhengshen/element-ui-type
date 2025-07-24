@@ -54,15 +54,16 @@ type __VLS_Props = {
     disabled: boolean;
 };
 /**
- *
  * 对整个表单进行校验的方法，参数为一个回调函数。该回调函数会在校验结束后被调用，并传入两个参数：是否校验成功和未通过校验的字段。
- *
- * 若不传入回调函数，则会返回一个 promise
  */
 declare function validate(callback: (valid: boolean, error?: {
     message: string;
     field: string;
 }[]) => void): void;
+/**
+ * 不传入回调函数，则会返回一个 promise
+ */
+declare function validate(): Promise<void>;
 /**
  * 对部分表单字段进行校验的方法
  */

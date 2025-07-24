@@ -61,10 +61,7 @@ defineEmits<{
 }>();
 
 /**
- *
  * 对整个表单进行校验的方法，参数为一个回调函数。该回调函数会在校验结束后被调用，并传入两个参数：是否校验成功和未通过校验的字段。
- *
- * 若不传入回调函数，则会返回一个 promise
  */
 function validate(
   callback: (
@@ -75,7 +72,11 @@ function validate(
     }[]
   ) => void
 ): void;
-function validate(): Promise<void> {
+/**
+ * 不传入回调函数，则会返回一个 promise
+ */
+function validate(): Promise<void>;
+function validate(arg?: any): any {
   return Promise.resolve();
 }
 /**
