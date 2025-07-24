@@ -26,13 +26,34 @@ function hasTypeInGlobalDts(pkg) {
 }
 
 // 生成todo内容
-let output = '# 组件类型覆盖进度\n\n';
-output += '| 组件名 | 类型声明 |\n';
-output += '| ------ | -------- |\n';
+let output = '# 组件类型覆盖 TODO 列表\n\n';
 
+// 统计未完成数量
+let todoCount = 0;
+let totalCount = packageDirs.length;
+
+// 先收集未完成项
+const todoList = [];
 for (const pkg of packageDirs) {
-  const checked = hasTypeInGlobalDts(pkg) ? '✅ 已完成' : '❌ TODO';
-  output += `| ${pkg} | ${checked} |\n`;
+  if (!hasTypeInGlobalDts(pkg)) {
+    todoList.push(pkg);
+    todoCount++;
+  }
+}
+
+// 进度条
+const percent = Math.round(((totalCount - todoCount) / totalCount) * 100);
+output += `**进度：${percent}%**  `;
+output += `[${'█'.repeat(percent / 5)}${'░'.repeat(20 - percent / 5)}] (${totalCount - todoCount}/${totalCount})\n\n`;
+
+if (todoList.length === 0) {
+  output += '🎉 所有组件类型声明已完成！';
+} else {
+  output += '| 组件名 | 类型声明 |\n';
+  output += '| ------ | -------- |\n';
+  for (const pkg of todoList) {
+    output += `| \`${pkg}\` | ❌ TODO |\n`;
+  }
 }
 
 fs.writeFileSync(todoMdPath, output, 'utf-8');
