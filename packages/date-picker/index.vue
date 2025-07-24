@@ -13,15 +13,24 @@ defineProps<{
   /** 是否显示清除按钮，默认为 true */
   clearable?: boolean;
   /** 输入框尺寸，medium / small / mini */
-  size?: 'medium' | 'small' | 'mini';
+  size?: "medium" | "small" | "mini";
   /** 非范围选择时的占位内容 */
   placeholder?: string;
   /** 范围选择时开始日期的占位内容 */
   startPlaceholder?: string;
   /** 范围选择时结束日期的占位内容 */
   endPlaceholder?: string;
-  /** 显示类型，如 date/daterange/datetime/datetimerange/year/month/week 等 */
-  type?: string;
+  /** 显示类型 year/month/date/dates/months/years week/datetime/datetimerange/ daterange/monthrange*/
+  type?:
+    | "year"
+    | "month"
+    | "date"
+    | "dates"
+    | "week"
+    | "datetime"
+    | "datetimerange"
+    | "daterange"
+    | "monthrange";
   /** 显示在输入框中的格式 */
   format?: string;
   /** 对齐方式，left/center/right（已废弃） */

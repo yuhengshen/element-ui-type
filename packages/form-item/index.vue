@@ -40,7 +40,7 @@ defineProps<{
   /**
    * 表单域 model 字段，在使用 validate、resetFields 方法的情况下，该属性是必填的
    */
-  prop: string;
+  prop?: string;
   /**
    * 标签文本
    */
