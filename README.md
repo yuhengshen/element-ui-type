@@ -1,3 +1,4 @@
+[![npm version](https://img.shields.io/npm/v/element-ui-type.svg?style=flat)](https://www.npmjs.com/package/element-ui-type)
 # element-ui-type
 
 基于 Element UI 的 全局组件类型声明库，适配 vue language tools@3。
@@ -19,7 +20,7 @@ pnpm add element-ui-type -D
 ```json
 {
   "compilerOptions": {
-    "types": ["element-ui-type/global.d.ts"]
+    "types": ["element-ui-type"]
   }
 }
 ```
