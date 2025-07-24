@@ -33,6 +33,8 @@ declare module "vue" {
     ElSelect: typeof import("./types/select/index.vue")["default"];
     ElOption: typeof import("./types/option/index.vue")["default"];
     ElOptionGroup: typeof import("./types/option-group/index.vue")["default"];
+    ElSwitch: typeof import("./types/switch/index.vue")["default"];
+    ElDialog: typeof import("./types/dialog/index.vue")["default"];
   }
 }
 

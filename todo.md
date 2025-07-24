@@ -29,7 +29,7 @@
 | date-picker | ✅ 已完成 |
 | descriptions | ❌ TODO |
 | descriptions-item | ❌ TODO |
-| dialog | ❌ TODO |
+| dialog | ✅ 已完成 |
 | divider | ❌ TODO |
 | drawer | ❌ TODO |
 | dropdown | ❌ TODO |
@@ -54,8 +54,8 @@
 | message | ❌ TODO |
 | message-box | ❌ TODO |
 | notification | ❌ TODO |
-| option | ❌ TODO |
-| option-group | ❌ TODO |
+| option | ✅ 已完成 |
+| option-group | ✅ 已完成 |
 | page-header | ❌ TODO |
 | pagination | ❌ TODO |
 | popconfirm | ❌ TODO |
@@ -68,7 +68,7 @@
 | result | ❌ TODO |
 | row | ✅ 已完成 |
 | scrollbar | ❌ TODO |
-| select | ❌ TODO |
+| select | ✅ 已完成 |
 | skeleton | ❌ TODO |
 | skeleton-item | ❌ TODO |
 | slider | ❌ TODO |
@@ -77,7 +77,7 @@
 | step | ❌ TODO |
 | steps | ❌ TODO |
 | submenu | ❌ TODO |
-| switch | ❌ TODO |
+| switch | ✅ 已完成 |
 | tab-pane | ✅ 已完成 |
 | table | ❌ TODO |
 | table-column | ❌ TODO |
