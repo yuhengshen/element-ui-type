@@ -1,6 +1,6 @@
 # 组件类型覆盖 TODO 列表
 
-**进度：37%**  [███████░░░░░░░░░░░░] (33/90)
+**进度：42%**  [████████░░░░░░░░░░░] (37/89)
 
 | 组件名 | 类型声明 |
 | ------ | -------- |
@@ -20,7 +20,6 @@
 | `icon` | ❌ TODO |
 | `image` | ❌ TODO |
 | `infinite-scroll` | ❌ TODO |
-| `input-number` | ❌ TODO |
 | `link` | ❌ TODO |
 | `loading` | ❌ TODO |
 | `main` | ❌ TODO |
@@ -35,9 +34,6 @@
 | `popconfirm` | ❌ TODO |
 | `popover` | ❌ TODO |
 | `progress` | ❌ TODO |
-| `radio` | ❌ TODO |
-| `radio-button` | ❌ TODO |
-| `radio-group` | ❌ TODO |
 | `rate` | ❌ TODO |
 | `result` | ❌ TODO |
 | `scrollbar` | ❌ TODO |
@@ -52,7 +48,6 @@
 | `table` | ❌ TODO |
 | `table-column` | ❌ TODO |
 | `tag` | ❌ TODO |
-| `theme-chalk` | ❌ TODO |
 | `time-picker` | ❌ TODO |
 | `time-select` | ❌ TODO |
 | `timeline` | ❌ TODO |

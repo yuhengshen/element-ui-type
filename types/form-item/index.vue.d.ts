@@ -29,7 +29,7 @@ type __VLS_Props = {
     /**
      * 表单验证规则
      */
-    rules?: Rule[];
+    rules?: Rule[] | Rule;
     /**
      * 表单域验证错误信息, 设置该值会使表单验证状态变为error，并显示该错误信息
      */
@@ -47,8 +47,18 @@ type __VLS_Props = {
      */
     size?: "medium" | "small" | "mini";
 };
+/**
+ * 对该表单项进行重置，将其值重置为初始值并移除校验结果
+ */
+declare function resetField(): void;
+/**
+ * 移除该表单项的校验结果
+ */
+declare function clearValidate(): void;
 declare var __VLS_1: {}, __VLS_3: {}, __VLS_5: {
-    error: any;
+    error: string & {
+        error: string;
+    }[];
 };
 type __VLS_Slots = {} & {
     default?: (props: typeof __VLS_1) => any;
@@ -57,7 +67,10 @@ type __VLS_Slots = {} & {
 } & {
     error?: (props: typeof __VLS_5) => any;
 };
-declare const __VLS_component: import("vue").DefineComponent<__VLS_TypePropsToOption<__VLS_Props>, void, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToOption<__VLS_Props>>>, {}>;
+declare const __VLS_component: import("vue").DefineComponent<__VLS_TypePropsToOption<__VLS_Props>, {
+    resetField: typeof resetField;
+    clearValidate: typeof clearValidate;
+}, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToOption<__VLS_Props>>>, {}>;
 declare const _default: __VLS_WithSlots<typeof __VLS_component, __VLS_Slots>;
 export default _default;
 type __VLS_TypePropsToOption<T> = {

@@ -3,6 +3,8 @@
 
 基于 Element UI 的 全局组件类型声明库，适配 vue language tools@3。
 
+支持文档中的 Props、Events、Slot 及 Exposed Methods。
+
 ## 安装
 
 ```bash

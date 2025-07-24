@@ -5,11 +5,11 @@ defineProps<{
   /**
    * 表单数据对象
    */
-  model?: object;
+  model?: Record<string, any>;
   /**
    * 表单验证规则
    */
-  rules?: Record<string, Rule[]>;
+  rules?: Record<string, Rule[] | Rule>;
   /**
    * 行内表单模式
    */
@@ -59,4 +59,46 @@ defineProps<{
 defineEmits<{
   (e: "validate", propValue: any, error: any): void;
 }>();
+
+/**
+ *
+ * 对整个表单进行校验的方法，参数为一个回调函数。该回调函数会在校验结束后被调用，并传入两个参数：是否校验成功和未通过校验的字段。
+ *
+ * 若不传入回调函数，则会返回一个 promise
+ */
+function validate(
+  callback: (
+    valid: boolean,
+    error?: {
+      message: string;
+      field: string;
+    }[]
+  ) => void
+): void;
+function validate(): Promise<void> {
+  return Promise.resolve();
+}
+/**
+ * 对部分表单字段进行校验的方法
+ */
+function validateField(
+  props: string | string[],
+  callback: (errorMsg: string) => void
+) {}
+
+/**
+ * 对整个表单进行重置，将所有字段值重置为初始值并移除校验结果
+ */
+function resetFields() {}
+/**
+ * 移除表单项的校验结果。传入待移除的表单项的 prop 属性或者 prop 组成的数组，如不传则移除整个表单的校验结果
+ */
+function clearValidate(prop?: string | string[]) {}
+
+defineExpose({
+  validate,
+  validateField,
+  resetFields,
+  clearValidate,
+});
 </script>

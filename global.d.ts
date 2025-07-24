@@ -15,8 +15,6 @@ declare module "vue" {
     ElCarousel: typeof import("./types/carousel/index.vue")["default"];
     ElCarouselItem: typeof import("./types/carousel-item/index.vue")["default"];
     ElCascader: typeof import("./types/cascader/index.vue")["default"];
-
-    // 先处理一些常用的
     ElCheckbox: typeof import("./types/checkbox/index.vue")["default"];
     ElCheckboxButton: typeof import("./types/checkbox-button/index.vue")["default"];
     ElCheckboxGroup: typeof import("./types/checkbox-group/index.vue")["default"];
@@ -35,6 +33,10 @@ declare module "vue" {
     ElOptionGroup: typeof import("./types/option-group/index.vue")["default"];
     ElSwitch: typeof import("./types/switch/index.vue")["default"];
     ElDialog: typeof import("./types/dialog/index.vue")["default"];
+    ElInputNumber: typeof import("./types/input-number/index.vue")["default"];
+    ElRadio: typeof import("./types/radio/index.vue")["default"];
+    ElRadioButton: typeof import("./types/radio-button/index.vue")["default"];
+    ElRadioGroup: typeof import("./types/radio-group/index.vue")["default"];
   }
 }
 

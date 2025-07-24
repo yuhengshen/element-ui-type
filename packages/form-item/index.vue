@@ -34,7 +34,7 @@ export type Rule = {
   range?: [number, number];
 };
 
-const error = {} as any;
+const error = {} as { error: string }[];
 
 defineProps<{
   /**
@@ -56,7 +56,7 @@ defineProps<{
   /**
    * 表单验证规则
    */
-  rules?: Rule[];
+  rules?: Rule[] | Rule;
   /**
    * 表单域验证错误信息, 设置该值会使表单验证状态变为error，并显示该错误信息
    */
@@ -74,4 +74,18 @@ defineProps<{
    */
   size?: "medium" | "small" | "mini";
 }>();
+
+/**
+ * 对该表单项进行重置，将其值重置为初始值并移除校验结果
+ */
+function resetField() {}
+/**
+ * 移除该表单项的校验结果
+ */
+function clearValidate() {}
+
+defineExpose({
+  resetField,
+  clearValidate,
+});
 </script>
