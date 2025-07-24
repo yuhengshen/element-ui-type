@@ -30,6 +30,9 @@ declare module "vue" {
     ElCollapseItem: typeof import("./types/collapse-item/index.vue")["default"];
     ElCol: typeof import("./types/col/index.vue")["default"];
     ElRow: typeof import("./types/row/index.vue")["default"];
+    ElSelect: typeof import("./types/select/index.vue")["default"];
+    ElOption: typeof import("./types/option/index.vue")["default"];
+    ElOptionGroup: typeof import("./types/option-group/index.vue")["default"];
   }
 }
 
