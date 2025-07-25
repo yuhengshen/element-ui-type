@@ -41,6 +41,10 @@ declare module "vue" {
     ElTimePicker: typeof import("./types/time-picker/index.vue")["default"];
     ElTimeSelect: typeof import("./types/time-select/index.vue")["default"];
     ElEmpty: typeof import("./types/empty/index.vue")["default"];
+    ElColorPicker: typeof import("./types/color-picker/index.vue")["default"];
+    ElContainer: typeof import("./types/container/index.vue")["default"];
+    ElFooter: typeof import("./types/footer/index.vue")["default"];
+    ElHeader: typeof import("./types/header/index.vue")["default"];
   }
 }
 

@@ -1,10 +1,10 @@
 type __VLS_Props = {
     /**
-     * 侧边栏宽度
+     * 子元素的排列方向
      *
-     * @default '300px'
+     * @default '子元素中有 el-header 或 el-footer 时为 vertical，否则为 horizontal'
      */
-    width?: "string";
+    direction?: "horizontal" | "vertical";
 };
 declare var __VLS_1: {};
 type __VLS_Slots = {} & {

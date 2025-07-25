@@ -4,10 +4,10 @@
 <script setup lang="ts">
 defineProps<{
   /**
-   * 侧边栏宽度
+   * 顶栏高度
    * 
-   * @default '300px'
+   * @default '60px'
    */
-  width?: "string";
+   height?: "string";
 }>();
 </script>
