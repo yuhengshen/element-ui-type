@@ -1,6 +1,6 @@
 # 组件类型覆盖 TODO 列表
 
-**进度：45%**  [█████████░░░░░░░░░░░] (40/89)
+**进度：46%**  [█████████░░░░░░░░░░] (41/89)
 
 | 组件名 | 类型声明 |
 | ------ | -------- |
@@ -13,7 +13,6 @@
 | `dropdown` | ❌ TODO |
 | `dropdown-item` | ❌ TODO |
 | `dropdown-menu` | ❌ TODO |
-| `empty` | ❌ TODO |
 | `footer` | ❌ TODO |
 | `header` | ❌ TODO |
 | `icon` | ❌ TODO |

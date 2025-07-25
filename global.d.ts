@@ -40,6 +40,7 @@ declare module "vue" {
     ElRadioGroup: typeof import("./types/radio-group/index.vue")["default"];
     ElTimePicker: typeof import("./types/time-picker/index.vue")["default"];
     ElTimeSelect: typeof import("./types/time-select/index.vue")["default"];
+    ElEmpty: typeof import("./types/empty/index.vue")["default"];
   }
 }
 
