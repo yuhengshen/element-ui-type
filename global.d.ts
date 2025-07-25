@@ -45,6 +45,8 @@ declare module "vue" {
     ElContainer: typeof import("./types/container/index.vue")["default"];
     ElFooter: typeof import("./types/footer/index.vue")["default"];
     ElHeader: typeof import("./types/header/index.vue")["default"];
+    ElDescriptions: typeof import("./types/descriptions/index.vue")["default"];
+    ElDescriptionsItem: typeof import("./types/descriptions-item/index.vue")["default"];
   }
 }
 
