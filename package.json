@@ -1,6 +1,6 @@
 {
   "name": "element-ui-type",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "element-ui type for vue language tools@3",
   "main": "index.ts",
   "type": "module",
@@ -27,7 +27,6 @@
   "author": "yuhengshen@qq.com",
   "license": "MIT",
   "packageManager": "pnpm@10.12.3",
-  "dependencies": {},
   "devDependencies": {
     "element-ui": "^2.15.14",
     "vue": "^2.7.16",

@@ -38,6 +38,8 @@ declare module "vue" {
     ElRadio: typeof import("./types/radio/index.vue")["default"];
     ElRadioButton: typeof import("./types/radio-button/index.vue")["default"];
     ElRadioGroup: typeof import("./types/radio-group/index.vue")["default"];
+    ElTimePicker: typeof import("./types/time-picker/index.vue")["default"];
+    ElTimeSelect: typeof import("./types/time-select/index.vue")["default"];
   }
 }
 

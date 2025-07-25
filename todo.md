@@ -1,10 +1,9 @@
 # 组件类型覆盖 TODO 列表
 
-**进度：42%**  [████████░░░░░░░░░░░] (37/89)
+**进度：45%**  [█████████░░░░░░░░░░░] (40/89)
 
 | 组件名 | 类型声明 |
 | ------ | -------- |
-| `cascader-panel` | ❌ TODO |
 | `color-picker` | ❌ TODO |
 | `container` | ❌ TODO |
 | `descriptions` | ❌ TODO |
@@ -48,8 +47,6 @@
 | `table` | ❌ TODO |
 | `table-column` | ❌ TODO |
 | `tag` | ❌ TODO |
-| `time-picker` | ❌ TODO |
-| `time-select` | ❌ TODO |
 | `timeline` | ❌ TODO |
 | `timeline-item` | ❌ TODO |
 | `tooltip` | ❌ TODO |

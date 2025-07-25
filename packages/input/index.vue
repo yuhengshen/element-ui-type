@@ -1,8 +1,8 @@
 <template>
-<slot name="prefix" />
-<slot name="suffix" />
-<slot name="prepend" />
-<slot name="append" />
+  <slot name="prefix" />
+  <slot name="suffix" />
+  <slot name="prepend" />
+  <slot name="append" />
 </template>
 
 <script setup lang="ts">
@@ -122,4 +122,8 @@ const props = defineProps({
     default: true,
   },
 });
+
+defineEmits<{
+  (e: 'input', value: string | number): void;
+}>();
 </script>

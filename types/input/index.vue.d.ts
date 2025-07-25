@@ -123,7 +123,9 @@ declare const __VLS_component: import("vue").DefineComponent<{
         type: BooleanConstructor;
         default: boolean;
     };
-}, void, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, Readonly<import("vue").ExtractPropTypes<{
+}, void, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+    input: (value: string | number) => void;
+}, string, Readonly<import("vue").ExtractPropTypes<{
     /**
      * 输入框类型
      */
