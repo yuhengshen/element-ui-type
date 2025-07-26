@@ -20,6 +20,8 @@ declare module "vue" {
     ElCheckboxButton: typeof import("./types/checkbox-button/index.vue")["default"];
     ElCheckboxGroup: typeof import("./types/checkbox-group/index.vue")["default"];
     ElDatePicker: typeof import("./types/date-picker/index.vue")["default"];
+    ElDivider: typeof import("./types/divider/index.vue")["default"];
+    ElDrawer: typeof import("./types/drawer/index.vue")["default"];
     ElInput: typeof import("./types/input/index.vue")["default"];
     ElTabs: typeof import("./types/tabs/index.vue")["default"];
     ElTabPane: typeof import("./types/tab-pane/index.vue")["default"];
@@ -47,6 +49,7 @@ declare module "vue" {
     ElHeader: typeof import("./types/header/index.vue")["default"];
     ElDescriptions: typeof import("./types/descriptions/index.vue")["default"];
     ElDescriptionsItem: typeof import("./types/descriptions-item/index.vue")["default"];
+    ElTag: typeof import("./types/tag/index.vue")["default"];
   }
 }
 
