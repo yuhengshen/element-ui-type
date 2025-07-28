@@ -2,9 +2,12 @@
   <slot></slot>
 </template>
 <script setup lang="ts">
+export type ButtonType = "primary" | "success" | "warning" | "danger" | "info" | "text";
+export type ButtonSize = "medium" | "small" | "mini";
+
 defineProps<{
-  type?: "primary" | "success" | "warning" | "danger" | "info" | "text";
-  size?: "medium" | "small" | "mini";
+  type?: ButtonType;
+  size?: ButtonSize;
   icon?: string;
   nativeType?: "button" | "submit" | "reset";
   loading?: boolean;

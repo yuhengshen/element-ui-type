@@ -1,6 +1,6 @@
 {
   "name": "element-ui-type",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "element-ui type for vue language tools@3",
   "main": "index.ts",
   "type": "module",

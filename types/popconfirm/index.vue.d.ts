@@ -1,29 +1,55 @@
-export type ButtonType = "primary" | "success" | "warning" | "danger" | "info" | "text";
-export type ButtonSize = "medium" | "small" | "mini";
+import { ButtonType } from "../button/index.vue";
 type __VLS_Props = {
-    type?: ButtonType;
-    size?: ButtonSize;
+    /**
+     * 标题
+     */
+    title?: string;
+    /**
+     * 确认按钮文字
+     */
+    confirmButtonText?: string;
+    /**
+     * 取消按钮文字
+     */
+    cancelButtonText?: string;
+    /**
+     * 确认按钮类型
+     *
+     * @default "primary"
+     */
+    confirmButtonType?: ButtonType;
+    /**
+     * 取消按钮类型
+     *
+     * @default "text"
+     */
+    cancelButtonType?: ButtonType;
+    /**
+     * Icon
+     *
+     * @default "el-icon-question"
+     */
     icon?: string;
-    nativeType?: "button" | "submit" | "reset";
-    loading?: boolean;
-    disabled?: boolean;
     /**
-     * 是否朴素按钮
+     * Icon 颜色
+     *
+     * @default "#f90"
      */
-    plain?: boolean;
-    autofocus?: boolean;
-    round?: boolean;
+    iconColor?: string;
     /**
-     * 是否圆形按钮
+     * 是否隐藏 Icon
+     *
+     * @default false
      */
-    circle?: boolean;
+    hideIcon?: boolean;
 };
 declare var __VLS_1: {};
 type __VLS_Slots = {} & {
-    default?: (props: typeof __VLS_1) => any;
+    reference?: (props: typeof __VLS_1) => any;
 };
 declare const __VLS_component: import("vue").DefineComponent<__VLS_TypePropsToOption<__VLS_Props>, void, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
-    click: (event: MouseEvent) => void;
+    confirm: () => void;
+    cancel: () => void;
 }, string, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToOption<__VLS_Props>>>, {}>;
 declare const _default: __VLS_WithSlots<typeof __VLS_component, __VLS_Slots>;
 export default _default;

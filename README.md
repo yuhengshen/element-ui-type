@@ -33,17 +33,6 @@ pnpm add element-ui-type -D
 - `packages/` 组件源码
 - `types/` 编译输出的类型文件
 
-## 贡献
-
-当前类型还未编写完成，欢迎提交 issue 和 PR 共同完善本项目。
-
-贡献流程建议：
-
-1. 删除组件目录下的文件
-2. 新建一个 index.vue 文件，并编写类型
-3. 执行 `pnpm build` 编译类型文件
-4. 在 global.d.ts 中添加组件类型声明
-
 ## FAQ
 
 ### 如何处理 ref 引用类型？

@@ -63,6 +63,29 @@ declare module "vue" {
     ElMenuItemGroup: typeof import("./types/menu-item-group/index.vue")["default"];
     ElSubmenu: typeof import("./types/submenu/index.vue")["default"];
     ElMain: typeof import("./types/main/index.vue")["default"];
+    ElPageHeader: typeof import("./types/page-header/index.vue")["default"];
+    ElPagination: typeof import("./types/pagination/index.vue")["default"];
+    ElPopconfirm: typeof import("./types/popconfirm/index.vue")["default"];
+    ElPopover: typeof import("./types/popover/index.vue")["default"];
+    ElProgress: typeof import("./types/progress/index.vue")["default"];
+    ElRate: typeof import("./types/rate/index.vue")["default"];
+    ElResult: typeof import("./types/result/index.vue")["default"];
+    ElScrollbar: typeof import("./types/scrollbar/index.vue")["default"];
+    ElSkeleton: typeof import("./types/skeleton/index.vue")["default"];
+    ElSkeletonItem: typeof import("./types/skeleton-item/index.vue")["default"];
+    ElSlider: typeof import("./types/slider/index.vue")["default"];
+    ElSteps: typeof import("./types/steps/index.vue")["default"];
+    ElStep: typeof import("./types/step/index.vue")["default"];
+    ElStatistic: typeof import("./types/statistic/index.vue")["default"];
+    ElSpinner: typeof import("./types/spinner/index.vue")["default"];
+    ElTable: typeof import("./types/table/index.vue")["default"];
+    ElTableColumn: typeof import("./types/table-column/index.vue")["default"];
+    ElTimeline: typeof import("./types/timeline/index.vue")["default"];
+    ElTimelineItem: typeof import("./types/timeline-item/index.vue")["default"];
+    ElTooltip: typeof import("./types/tooltip/index.vue")["default"];
+    ElTransfer: typeof import("./types/transfer/index.vue")["default"];
+    ElUpload: typeof import("./types/upload/index.vue")["default"];
+    ElTree: typeof import("./types/tree/index.vue")["default"];
   }
   export interface GlobalDirectives {
     /**
