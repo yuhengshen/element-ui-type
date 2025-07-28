@@ -1,3 +1,5 @@
+import { Directive } from "vue";
+
 declare module "vue" {
   export interface GlobalComponents {
     ElAlert: typeof import("./types/alert/index.vue")["default"];
@@ -55,7 +57,42 @@ declare module "vue" {
     ElDropdownMenu: typeof import("./types/dropdown-menu/index.vue")["default"];
     ElImage: typeof import("./types/image/index.vue")["default"];
     ElIcon: typeof import("./types/icon/index.vue")["default"];
+    ElLink: typeof import("./types/link/index.vue")["default"];
+    ElMenu: typeof import("./types/menu/index.vue")["default"];
+    ElMenuItem: typeof import("./types/menu-item/index.vue")["default"];
+    ElMenuItemGroup: typeof import("./types/menu-item-group/index.vue")["default"];
+    ElSubmenu: typeof import("./types/submenu/index.vue")["default"];
+    ElMain: typeof import("./types/main/index.vue")["default"];
+  }
+  export interface GlobalDirectives {
+    /**
+     * 滚动至底部时，加载更多数据
+     * 
+     * | 元素属性 | 类型 | 默认值 | 说明 |
+     * | --- | --- | --- | --- |
+     * | `infinite-scroll-disabled` | boolean | false | 是否禁用 |
+     * | `infinite-scroll-delay` | number | 200 | 节流时延，单位为ms |
+     * | `infinite-scroll-distance` | number | 0 | 触发加载的距离阈值，单位为px |
+     * | `infinite-scroll-immediate` | boolean | true | 是否立即执行加载方法，以防初始状态下内容无法撑满容器。 |
+     */
+    vInfiniteScroll: Directive<any, () => void>;
+
+    /**
+     * 加载数据时显示动效
+     * 
+     * | 元素属性 | 类型 | 默认值 | 说明 |
+     * | --- | --- | --- | --- |
+     * | `element-loading-target` | object/string | document.body | Loading 需要覆盖的 DOM 节点。可传入一个 DOM 对象或字符串；若传入字符串，则会将其作为参数传入 document.querySelector以获取到对应 DOM 节点 |
+     * | `element-loading-body` | boolean | false | 同 v-loading 指令中的 body 修饰符 |
+     * | `element-loading-fullscreen` | boolean | true | 同 v-loading 指令中的 fullscreen 修饰符 |
+     * | `element-loading-lock` | boolean | false | 同 v-loading 指令中的 lock 修饰符 |
+     * | `element-loading-text` | string | — | 显示在加载图标下方的加载文案 |
+     * | `element-loading-spinner` | string | — | 自定义加载图标类名 |
+     * | `element-loading-background` | string | — | 遮罩背景色 |
+     * | `element-loading-custom-class` | string | — | Loading 的自定义类名 |
+     */
+    vLoading: Directive<any, boolean>;
   }
 }
 
-export {};
+export { };

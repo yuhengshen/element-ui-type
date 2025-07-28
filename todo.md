@@ -1,16 +1,9 @@
 # 组件类型覆盖 TODO 列表
 
-**进度：62%**  [████████████░░░░░░░] (55/89)
+**进度：70%**  [██████████████░░░░░░] (61/87)
 
 | 组件名 | 类型声明 |
 | ------ | -------- |
-| `infinite-scroll` | ❌ TODO |
-| `link` | ❌ TODO |
-| `loading` | ❌ TODO |
-| `main` | ❌ TODO |
-| `menu` | ❌ TODO |
-| `menu-item` | ❌ TODO |
-| `menu-item-group` | ❌ TODO |
 | `message` | ❌ TODO |
 | `message-box` | ❌ TODO |
 | `notification` | ❌ TODO |
@@ -29,7 +22,6 @@
 | `statistic` | ❌ TODO |
 | `step` | ❌ TODO |
 | `steps` | ❌ TODO |
-| `submenu` | ❌ TODO |
 | `table` | ❌ TODO |
 | `table-column` | ❌ TODO |
 | `timeline` | ❌ TODO |
