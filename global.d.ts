@@ -50,6 +50,11 @@ declare module "vue" {
     ElDescriptions: typeof import("./types/descriptions/index.vue")["default"];
     ElDescriptionsItem: typeof import("./types/descriptions-item/index.vue")["default"];
     ElTag: typeof import("./types/tag/index.vue")["default"];
+    ElDropdown: typeof import("./types/dropdown/index.vue")["default"];
+    ElDropdownItem: typeof import("./types/dropdown-item/index.vue")["default"];
+    ElDropdownMenu: typeof import("./types/dropdown-menu/index.vue")["default"];
+    ElImage: typeof import("./types/image/index.vue")["default"];
+    ElIcon: typeof import("./types/icon/index.vue")["default"];
   }
 }
 
