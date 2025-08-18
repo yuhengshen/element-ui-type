@@ -84,7 +84,7 @@ function focus() {}
 function select() {}
 
 defineExpose({
-  focus: () => {},
-  select: () => {},
+  focus,
+  select,
 });
 </script>

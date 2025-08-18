@@ -11,7 +11,7 @@ type __VLS_Slots = {} & {
     dateCell?: (props: typeof __VLS_1) => any;
 };
 declare const __VLS_component: import("vue").DefineComponent<{
-    value: (StringConstructor | DateConstructor | NumberConstructor)[];
+    value: (DateConstructor | StringConstructor | NumberConstructor)[];
     range: {
         type: ArrayConstructor;
     };
@@ -22,7 +22,7 @@ declare const __VLS_component: import("vue").DefineComponent<{
 }, void, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     input: (date: Date) => void;
 }, string, Readonly<import("vue").ExtractPropTypes<{
-    value: (StringConstructor | DateConstructor | NumberConstructor)[];
+    value: (DateConstructor | StringConstructor | NumberConstructor)[];
     range: {
         type: ArrayConstructor;
     };

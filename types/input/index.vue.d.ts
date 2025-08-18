@@ -124,7 +124,11 @@ declare const __VLS_component: import("vue").DefineComponent<{
         default: boolean;
     };
 }, void, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+    blur: (event: FocusEvent) => void;
+    focus: (event: FocusEvent) => void;
+    change: (value: string | number) => void;
     input: (value: string | number) => void;
+    clear: () => void;
 }, string, Readonly<import("vue").ExtractPropTypes<{
     /**
      * 输入框类型

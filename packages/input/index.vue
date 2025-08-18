@@ -124,6 +124,10 @@ const props = defineProps({
 });
 
 defineEmits<{
+  (e: 'blur', event: FocusEvent): void;
+  (e: 'focus', event: FocusEvent): void;
+  (e: 'change', value: string | number): void;
   (e: 'input', value: string | number): void;
+  (e: 'clear'): void;
 }>();
 </script>

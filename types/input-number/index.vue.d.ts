@@ -66,9 +66,17 @@ type __VLS_Props = {
      */
     placeholder?: string;
 };
+/**
+ * 	使 input 获取焦点
+ */
+declare function focus(): void;
+/**
+ * 选中 input 中的文字
+ */
+declare function select(): void;
 declare const _default: import("vue").DefineComponent<__VLS_TypePropsToOption<__VLS_Props>, {
-    focus: () => void;
-    select: () => void;
+    focus: typeof focus;
+    select: typeof select;
 }, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     change: (currentValue: number, oldValue: number) => void;
     blur: (event: FocusEvent) => void;
