@@ -13,7 +13,7 @@ defineProps<{
    * 
    * @default "click"
    */
-  trigger?: string
+  trigger?: "click" | "hover" | "focus" | "manual"
   /**
    * 标题
    */
