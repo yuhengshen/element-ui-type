@@ -25,6 +25,10 @@ defineProps<{
    */
   clearable?: boolean;
   /**
+   * 是否可搜索
+   */
+  filterable?: boolean;
+  /**
    * 多选时是否将选中值按文字的形式展示
    */
   collapseTags?: boolean;
