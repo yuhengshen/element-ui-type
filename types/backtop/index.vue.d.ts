@@ -33,9 +33,9 @@ declare const __VLS_component: import("vue").DefineComponent<{
         default: number;
     };
 }>>, {
-    visibilityHeight: number;
-    right: number;
     bottom: number;
+    right: number;
+    visibilityHeight: number;
 }>;
 declare const _default: __VLS_WithSlots<typeof __VLS_component, __VLS_Slots>;
 export default _default;

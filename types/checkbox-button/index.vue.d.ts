@@ -8,8 +8,8 @@ declare const __VLS_component: import("vue").DefineComponent<{
     disabled: BooleanConstructor;
     checked: BooleanConstructor;
     name: StringConstructor;
-    trueLabel: (StringConstructor | NumberConstructor)[];
-    falseLabel: (StringConstructor | NumberConstructor)[];
+    trueLabel: (NumberConstructor | StringConstructor)[];
+    falseLabel: (NumberConstructor | StringConstructor)[];
 }, void, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     change: (value: any) => void;
     input: (value: any, ev: any) => void;
@@ -19,8 +19,8 @@ declare const __VLS_component: import("vue").DefineComponent<{
     disabled: BooleanConstructor;
     checked: BooleanConstructor;
     name: StringConstructor;
-    trueLabel: (StringConstructor | NumberConstructor)[];
-    falseLabel: (StringConstructor | NumberConstructor)[];
+    trueLabel: (NumberConstructor | StringConstructor)[];
+    falseLabel: (NumberConstructor | StringConstructor)[];
 }>>, {
     disabled: boolean;
     checked: boolean;

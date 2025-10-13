@@ -109,7 +109,7 @@ type __VLS_Slots = {} & {
 declare const __VLS_component: import("vue").DefineComponent<__VLS_TypePropsToOption<__VLS_Props>, {
     clearQuery: typeof clearQuery;
 }, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
-    change: (value: string[], direction: "right" | "left", movedKeys: string[]) => void;
+    change: (value: string[], direction: "left" | "right", movedKeys: string[]) => void;
     "left-check-change": (checkedKeys: string[], indeterminateKeys: string[]) => void;
     "right-check-change": (checkedKeys: string[], indeterminateKeys: string[]) => void;
 }, string, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToOption<__VLS_Props>>>, {}>;

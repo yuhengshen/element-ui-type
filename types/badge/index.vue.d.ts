@@ -3,7 +3,7 @@ type __VLS_Slots = {} & {
     default?: (props: typeof __VLS_1) => any;
 };
 declare const __VLS_component: import("vue").DefineComponent<{
-    value: (StringConstructor | NumberConstructor)[];
+    value: (NumberConstructor | StringConstructor)[];
     max: NumberConstructor;
     isDot: BooleanConstructor;
     hidden: BooleanConstructor;
@@ -11,7 +11,7 @@ declare const __VLS_component: import("vue").DefineComponent<{
         type: StringConstructor;
     };
 }, void, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, Readonly<import("vue").ExtractPropTypes<{
-    value: (StringConstructor | NumberConstructor)[];
+    value: (NumberConstructor | StringConstructor)[];
     max: NumberConstructor;
     isDot: BooleanConstructor;
     hidden: BooleanConstructor;

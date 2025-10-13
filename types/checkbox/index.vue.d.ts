@@ -9,8 +9,8 @@ declare const __VLS_component: import("vue").DefineComponent<{
     disabled: BooleanConstructor;
     checked: BooleanConstructor;
     name: StringConstructor;
-    trueLabel: (StringConstructor | NumberConstructor)[];
-    falseLabel: (StringConstructor | NumberConstructor)[];
+    trueLabel: (NumberConstructor | StringConstructor)[];
+    falseLabel: (NumberConstructor | StringConstructor)[];
     id: StringConstructor;
     controls: StringConstructor;
     border: BooleanConstructor;
@@ -25,8 +25,8 @@ declare const __VLS_component: import("vue").DefineComponent<{
     disabled: BooleanConstructor;
     checked: BooleanConstructor;
     name: StringConstructor;
-    trueLabel: (StringConstructor | NumberConstructor)[];
-    falseLabel: (StringConstructor | NumberConstructor)[];
+    trueLabel: (NumberConstructor | StringConstructor)[];
+    falseLabel: (NumberConstructor | StringConstructor)[];
     id: StringConstructor;
     controls: StringConstructor;
     border: BooleanConstructor;

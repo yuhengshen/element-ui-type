@@ -19,7 +19,7 @@ declare const __VLS_component: import("vue").DefineComponent<{
     /**
      * 绑定值
      */
-    value: (StringConstructor | NumberConstructor)[];
+    value: (NumberConstructor | StringConstructor)[];
     /**
      * 最大输入长度
      */
@@ -87,15 +87,15 @@ declare const __VLS_component: import("vue").DefineComponent<{
     /**
      * 原生属性，设置最大值
      */
-    max: (StringConstructor | NumberConstructor)[];
+    max: (NumberConstructor | StringConstructor)[];
     /**
      * 原生属性，设置最小值
      */
-    min: (StringConstructor | NumberConstructor)[];
+    min: (NumberConstructor | StringConstructor)[];
     /**
      * 原生属性，设置输入字段的合法数字间隔
      */
-    step: (StringConstructor | NumberConstructor)[];
+    step: (NumberConstructor | StringConstructor)[];
     /**
      * 控制是否能被用户缩放
      */
@@ -140,7 +140,7 @@ declare const __VLS_component: import("vue").DefineComponent<{
     /**
      * 绑定值
      */
-    value: (StringConstructor | NumberConstructor)[];
+    value: (NumberConstructor | StringConstructor)[];
     /**
      * 最大输入长度
      */
@@ -208,15 +208,15 @@ declare const __VLS_component: import("vue").DefineComponent<{
     /**
      * 原生属性，设置最大值
      */
-    max: (StringConstructor | NumberConstructor)[];
+    max: (NumberConstructor | StringConstructor)[];
     /**
      * 原生属性，设置最小值
      */
-    min: (StringConstructor | NumberConstructor)[];
+    min: (NumberConstructor | StringConstructor)[];
     /**
      * 原生属性，设置输入字段的合法数字间隔
      */
-    step: (StringConstructor | NumberConstructor)[];
+    step: (NumberConstructor | StringConstructor)[];
     /**
      * 控制是否能被用户缩放
      */
@@ -246,8 +246,8 @@ declare const __VLS_component: import("vue").DefineComponent<{
     };
 }>>, {
     type: string;
-    clearable: boolean;
     disabled: boolean;
+    clearable: boolean;
     autofocus: boolean;
     readonly: boolean;
     validateEvent: boolean;

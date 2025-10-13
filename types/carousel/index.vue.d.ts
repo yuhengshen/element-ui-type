@@ -77,8 +77,8 @@ declare const __VLS_component: import("vue").DefineComponent<{
         default: string;
     };
 }>>, {
-    initialIndex: number;
     trigger: string;
+    initialIndex: number;
     autoplay: boolean;
     interval: number;
     indicator: boolean;
